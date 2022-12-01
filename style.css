@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* list-style: none; */
+    
+}
+
+body{
+    /* font-family: montserrat; */
+    background-color: black;
+} 
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+    height: 80px;
+    width: 100%;
+    background: #34495e3b;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+    /* padding: 100px; */
+}
+
+.logoimage{
+    height: 80px;
+}
+
+a.alogo{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border: none !important;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline;
+    margin-right: 8px;
+    line-height: 80px;
+}
+
+a.menus {
+    padding: 7px 10px;
+
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+a.active, a:hover{
+    border: 1px solid #222d5a;
+    transition: .5s;
+}
+
+nav #icon{
+    display: flex;
+    align-items: center;
+
+    color: black;
+    font-size: 30px;
+    /* line-height: 80px; */
+    /* float: right; */
+    margin-right: 40px;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icone-search{
+    display: none;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width : 750px){
+    nav #icon{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .icone-search{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .logo{
+        margin: 0;
+    }
+
+    nav ul{
+        text-align: center;
+
+        position: fixed;
+        width: 100%;
+        height: fit-content;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    /* a.active,a:hover{
+        border:none;
+        color: #3498db;
+    } */
+    nav ul.show{
+        left: 0;
+    }
+}
+
+#page{
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
