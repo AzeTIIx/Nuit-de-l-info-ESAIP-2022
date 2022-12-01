@@ -7,29 +7,34 @@
 
 body{
     /* font-family: montserrat; */
-    background-color: black;
+    background-color: grey;
 } 
 
 nav{
     display: flex;
     justify-content: space-between;
     
-    height: 80px;
+    height: 10vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     width: 100%;
-    background: #34495e3b;
+    background: white;
 }
 
 .logo{
     display: flex;
     align-items: center;
-    margin-left: 40px;
-    margin-top: 10px;
+    margin-left: 2vh;
     /* margin-bottom: 5px; */
     /* padding: 100px; */
 }
 
 .logoimage{
-    height: 80px;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 a.alogo{
@@ -41,8 +46,10 @@ a.alogo{
 }
 
 nav ul{
-    float: right;
-    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vh;
 }
 
 nav li{
@@ -52,18 +59,17 @@ nav li{
 }
 
 a.menus {
-    padding: 7px 10px;
 
     color: black;
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid transparent;
+    border: 1vh solid transparent;
     border-radius: 3px;
 }
 
 a.active, a:hover{
-    border: 1px solid #222d5a;
+    border: 1px solid #ff0000;
     transition: .5s;
 }
 
