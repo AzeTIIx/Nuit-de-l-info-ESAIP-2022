@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     /* list-style: none; */
     
 }
@@ -91,6 +92,53 @@ nav #icon{
     display: none;
     color: black;
     cursor: pointer;
+}
+
+.next{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 100px;
+}
+
+.message{
+    text-align: center;
+}
+
+.container{
+    width:90vw;
+    margin :auto;
+    border:1px solid #ddd;
+}
+
+.game{
+text-align: center;
+margin: 10px;
+padding: 10px;
+background-color: #eee;
+}
+
+.question{
+
+font-size: 1.2em;
+padding: 5px;
+margin: 3px;
+}
+
+.opts button{
+margin:3px;
+text-transform: capitalize;
+padding: 3px;
+color: white;
+background-color: black;
+min-width: 90px;
+}
+
+#btn{
+display: block;
+padding : 10px;
+font-size: 2em;
+margin: auto;
 }
 
 @media (max-width : 750px){

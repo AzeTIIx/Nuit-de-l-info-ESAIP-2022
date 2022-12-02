@@ -1,0 +1,156 @@
+[
+    {
+
+        "question": "Quelle est la tranche d'age favorable au Chlamydiae ",
+        "answer" : "16-25 ans",
+        "opt": [
+            "25-35 ans",
+            "35-50 ans",
+            "50-70 ans"
+        ]
+    },
+
+    {
+
+        "question": "Quelle est la méthode de dépistage du Chlamydiae ",
+        "answer" : "Analyses d'urines",
+        "opt": [
+            "Analyses de sang",
+            "Frottis",
+            "Echographie"
+        ]
+    },
+
+    {
+
+        "question": "Combien y a-t-il de types d'herpès ",
+        "answer" : "2",
+        "opt": [
+            "1",
+            "4",
+            "6"
+        ]
+    },
+
+    {
+
+        "question": "Quelles sont les symptomes de l'herpès ",
+        "answer" : "Asymptomatique/poussée d'herpès",
+        "opt": [
+            "Fièvre",
+            "Infection urinaire",
+            "Démangeaisons"
+        ]
+    },
+
+    {
+
+        "question": "Quel organe est attaqué par l'hépatite B ",
+        "answer" : "Le foie",
+        "opt": [
+            "Le coeur",
+            "Infection urinaire",
+            "Reins"
+        ]
+    },
+
+    {
+
+        "question": "L'hépatite B nécessite-t-elle un traitement ",
+        "answer" : "Uniquement de la surveillance",
+        "opt": [
+            "traitement journalier",
+            "Aucune mesure",
+            "Traitement mensuel par intraveineuse"
+        ]
+    },
+
+    {
+
+        "question": "Depuis quand le traitement de la syphilis existe ",
+        "answer" : "1943",
+        "opt": [
+            "2002",
+            "1966",
+            "Il n'y a toujours pas de traitement"
+        ]
+    },
+
+    {
+
+        "question": "Comment dépiste-t-on la syphilis ",
+        "answer" : "Prise de sang",
+        "opt": [
+            "Analyses d'urines",
+            "Constatation visuelle",
+            "Frottis"
+        ]
+    },
+
+    {
+
+        "question": "Comment se transmettent la Gonococcie et la Blennoragie ",
+        "answer" : "Contact sexuel",
+        "opt": [
+            "Salive",
+            "par transmission aérienne",
+            "Aucune transmission n'est possible"
+        ]
+    },
+
+    {
+
+        "question": "Quelle est la période optimale pour détécter la Gonococcie et la Blennoragie ",
+        "answer" : "7 jours après le rapport",
+        "opt": [
+            "Tout de suite",
+            "1 mois après le rapport",
+            "1 an après le rapport"
+        ]
+    },
+
+    {
+
+        "question": "Quel est le pourcentage de chance de rencontrer le papillomavirus chez une personne active ",
+        "answer" : "70 à 80%",
+        "opt": [
+            "10 à 15%",
+            "50 à 60%",
+            "5%"
+        ]
+    },
+
+    {
+
+        "question": "Quelle est la tranche d'âge pour se faire vacciner contre le papillomavirus ",
+        "answer" : "11-19 ans",
+        "opt": [
+            "5 à 10 ans",
+            "20 à 27 ans",
+            "30 ans et plus"
+        ]
+    },
+    
+    {
+
+        "question": "On peut-on se faire dépister du SIDA ",
+        "answer" : "Dans un laboratoire d'analyses",
+        "opt": [
+            "A la pharmacie",
+            "A l'hopital",
+            "Chez son généraliste"
+        ]
+    },
+
+    {
+
+        "question": "Un baiser est-il un facteur de risque de transmission du SIDA ",
+        "answer" : "Non",
+        "opt": [
+            "Oui",
+            "cela dépend à quelle stade de la maladie est la personne séropositive",
+            "La réponse D"
+        ]
+    }
+
+]
