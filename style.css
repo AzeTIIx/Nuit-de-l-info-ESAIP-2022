@@ -139,4 +139,20 @@ nav #icon{
 #page{
     background-size: cover;
     height: calc(100vh - 80px);
+    display:flex;
+    flex-direction: row;
+    width:100vh;
+}
+
+.wheel
+{
+    width:50vh;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:50vh;
 }
