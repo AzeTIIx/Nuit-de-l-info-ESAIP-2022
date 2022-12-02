@@ -6,12 +6,10 @@
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>N2I</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>        
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-        <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
-        <script src="script.js"></script> 
+        
         
     </head>
 
@@ -31,30 +29,23 @@
         </nav>
 
         <div id="page">
-            <div class="wheel">
-                <div class="wrapper">
-                    <div class="container">
-                      <canvas id="wheel"></canvas>
-                      <button id="spin-btn">Spin</button>
-                      <img src="src/bite.png" alt="spinner-arrow" />
-                    </div>
-                    <div id="final-value">
-                      <p>Click On The Spin Button To Start</p>
-                    </div>
-                  </div>
-                  <script src="script.js"></script>
-            </div>
-                <div class="container">
-                    <button id="btn">Start</button>
-                </div>
-
-                <script src="app.js"></script>
+            <div class="container">
+                <table>
+                    <tr>
+                        <td><input type="button" value="bonne réponse" class="bonnerep" onclick=""></td>
+                        <td><input type="button" value="mauvaise réponse" class="badrep" onclick=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="mauvaise réponse" class="badrep" onclick=""></td>
+                        <td><input type="button" value="mauvaise réponse" class="badrep" onclick=""></td>
+                    </tr>
+                </table>
                 <div id="text">
                     <!-- L'endroit où seront affichés les tips et si la réponse entrée est bonne-->
                     text
                 </div>
             </div>
         </div>
-    
+
     </body>
 </html>
