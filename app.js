@@ -1,6 +1,6 @@
 const btn = document.querySelector('#btn');
 const main = document.querySelector('.container');
-const message = pagesEles(main, 'div', 'Press Start button', 'message');
+const message = pagesEles(main, 'div', 'Appuyez sur le bouton start', 'message');
 const output = pagesEles(main, 'div',"", 'game', "");
 const url = 'BDD.json'
 const game = {score:0};
@@ -34,7 +34,7 @@ function createQuestion(data){
     
     //console.log(data);
     if(data.q.length == 0){
-        message.innerHTML = `<h1>Game Over</h1><div>You scored ${game.score} correct out of ${data.total} questions.</div>`;
+        message.innerHTML = `<h1>Merci d'avoir joué !</h1><br><div>Votre score est de ${game.score} / ${data.total}.</div>`;
     }
 
     else{
@@ -47,7 +47,7 @@ function createQuestion(data){
         var question = data.q.shift();
         data.counter++;
         message.textContent = `Question : ${data.counter} of ${data.total}`;
-        if (data.q.length == 0) tBtn.textContent = 'End Game';
+        if (data.q.length == 0) tBtn.textContent = 'Fin du jeu';
         tBtn.style.display = 'none';
         outputQuestion(question, el, tBtn);
     }
@@ -66,18 +66,19 @@ function outputQuestion(question, parent, tBtn){
         const optemp = pagesEles(btns, 'button', e, 'btns')
         optemp.onclick = () =>{
             if(question.answer == e){
-                message.textContent = "Correct";
+                message.textContent = "Bonne réponse !";
                 game.score++;
             }
 
             else{
-                message.textContent = "Incorrect";
+                message.textContent = "Faux";
             }
             const temps = parent.querySelectorAll('.btns');
             temps.forEach(el=> {
                 el.disabled = true;
                 const bgc = (question.answer == el.textContent)?'green':'red';
                 el.style.backgroundColor = bgc;
+                el.style.color = (question.answer == el.textContent)?'white':'white';
             })
             tBtn.style.display = "block";
             parent.appendChild(tBtn);

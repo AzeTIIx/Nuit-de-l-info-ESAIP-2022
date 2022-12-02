@@ -3,20 +3,29 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan';
     /* list-style: none; */
     
 }
 
+#page{
+    background-size: cover;
+    height: calc(100vh - 80px);
+    display:flex;
+    flex-direction: row;
+}
+
 body{
     /* font-family: montserrat; */
-    background-color: #BFBFBF;
+    background-color: #000000;
 } 
 
 nav{
     display: flex;
     justify-content: space-between;
     
-    height: 10vh;
+    min-height: 10vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
     width: 100%;
@@ -27,8 +36,9 @@ nav{
     display: flex;
     align-items: center;
     margin-left: 2vh;
-    /* margin-bottom: 5px; */
-    /* padding: 100px; */
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    
 }
 
 .logoimage{
@@ -110,12 +120,77 @@ nav #icon{
     box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
 }
 
-.container {
-    width:auto;
-    margin :auto;
-    border:1px solid #ddd;
+.next{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 100px;
 }
 
+.message{
+    text-align: center;
+    margin-top: 2vh;
+    color: white;
+}
+
+.container{
+    min-width:190vh;
+    margin:auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.game{
+    margin: 10px;
+    padding: 10px;
+    min-height: 35vh;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.question{
+
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 3px;
+}
+
+.opts button{
+    margin:3px;
+    text-transform: capitalize;
+    padding: 3px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-color: #212121;
+    min-width: 110px;
+    min-height: 50px;
+    border-radius: 5px;
+    padding: 9px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#btn{
+    display: block;
+    padding : 10px;
+    font-size: 2em;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-color: #212121;
+}
 
 
 
@@ -162,12 +237,6 @@ nav #icon{
     }
 }
 
-#page{
-    background-size: cover;
-    height: calc(100vh - 80px);
-    display:flex;
-    flex-direction: row;
-    width:100vh;
-}
+
 
 
