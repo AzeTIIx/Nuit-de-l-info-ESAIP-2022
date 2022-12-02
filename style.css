@@ -93,53 +93,6 @@ nav #icon{
     cursor: pointer;
 }
 
-.next{
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-    width: 100px;
-}
-
-.message{
-    text-align: center;
-}
-
-.container{
-    width:90vw;
-    margin :auto;
-    border:1px solid #ddd;
-}
-
-.game{
-text-align: center;
-margin: 10px;
-padding: 10px;
-background-color: #eee;
-}
-
-.question{
-
-font-size: 1.2em;
-padding: 5px;
-margin: 3px;
-}
-
-.opts button{
-margin:3px;
-text-transform: capitalize;
-padding: 3px;
-color: white;
-background-color: black;
-min-width: 90px;
-}
-
-#btn{
-display: block;
-padding : 10px;
-font-size: 2em;
-margin: auto;
-}
-
 @media (max-width : 750px){
     nav #icon{
         display: flex;
@@ -217,15 +170,15 @@ margin: auto;
     padding: 3em;
     border-radius: 1em;
     box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
-  }
+}
 
-  .container {
+.containe {
     position: relative;
     width: 100%;
     height: 100%;
-  }
+}
 
-  #wheel {
+#wheel {
     max-height: inherit;
     width: inherit;
     top: 0;
@@ -256,7 +209,7 @@ margin: auto;
     font-weight: 600;
   }
 
-  img {
+  #dick {
     position: absolute;
     width: 13em;
     top: 34%;
@@ -279,3 +232,70 @@ margin: auto;
       right: -5%;
     }
   }
+
+  /* fin roue */
+
+@media (max-width : 750px){
+    nav #icon{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .icone-search{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .logo{
+        margin: 0;
+    }
+
+    nav ul{
+        text-align: center;
+
+        position: fixed;
+        width: 100%;
+        height: fit-content;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    /* a.active,a:hover{
+        border:none;
+        color: #3498db;
+    } */
+    nav ul.show{
+        left: 0;
+    }
+}
+
+#page{
+    background-size: cover;
+    height: calc(100vh - 80px);
+    display:flex;
+    flex-direction: row;
+    width:100vh;
+}
+
+.wheel
+{
+    width:50vh;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:50vh;
+}
+
