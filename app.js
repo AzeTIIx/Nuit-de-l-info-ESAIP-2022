@@ -4,6 +4,8 @@ const message = pagesEles(main, 'div', 'Appuyez sur le bouton start', 'message')
 const output = pagesEles(main, 'div',"", 'game', "");
 const url = 'BDD.json'
 const game = {score:0};
+const flag  ="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ=="
+
 
 btn.onclick = loadData;
 
@@ -34,11 +36,12 @@ function createQuestion(data){
     
     //console.log(data);
     if(data.q.length == 0){
-        message.innerHTML = `<h1>Merci d'avoir joué !</h1><br><div>Votre score est de ${game.score} / ${data.total}.</div>`;
+        message.innerHTML = `<h1>Merci d'avoir joué !</h1><br><div>Votre score est de ${game.score} / ${data.total}.</div><br> `;
+        console.log(`Réussissez à décoder le messsage :  ${flag}`);
     }
 
     else{
-        const tBtn = pagesEles(el, 'button', 'Next', 'next');
+        const tBtn = pagesEles(el, 'button', 'Next', 'next2');
         tBtn.onclick = () => {
             el.remove();
             createQuestion(data);
@@ -84,7 +87,6 @@ function outputQuestion(question, parent, tBtn){
             parent.appendChild(tBtn);
         }
     });
-    console.log(arr);
 }
 
 function pagesEles(parent, t, html, c){
